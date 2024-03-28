@@ -58,8 +58,8 @@ type TagWAFRule struct {
 	Sync          bool            `json:"sync"`
 	ProcessNext   bool            `json:"processNext"`
 	Enabled       bool            `json:"enabled"`
-	Actions       []*WAFAction    `json:"actions"`
-	Conditions    []*WAFCondition `json:"conditions"`
+	Actions       []WAFAction     `json:"actions"`
+	Conditions    []WAFCondition  `json:"conditions"`
 	TagId         int             `json:"tagId"`
 }
 
